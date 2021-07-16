@@ -62,10 +62,15 @@
                                 <i class="far fa-bell"></i>
                                 <span>Thông Báo</span>
                             </a>   
-                            <div class="popover">
+                            <div class="popover__message popover">
                                 <div class="popover__header">
-                                    
+                                    <img src="./Assets/Images/logintoviewmes.png" alt="" class="popover__header-img">
+                                    <h3 class="popover__header-title">Vui lòng đăng nhập để xem thông báo</h3>
                                 </div>
+                                <footer class="popover__footer">
+                                    <a href="" class="popover__footer-link-acc">Đăng Nhập</a>
+                                    <a href="" class="popover__footer-link-acc">Đăng Ký</a>
+                                </footer>
                             </div>     
                         </li>
                         <li class="navbar__list-item">
@@ -93,6 +98,55 @@
 
         </footer>
         <!-- ================ Footer  ent================ -->
+
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- auth-form: begin -->
+                <div class="auth-form">
+                   <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Ký</h3>
+                            <span class="auth-form__swicth-btn">Đăng Nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__form-group">
+                                <input class="auth-form__form-input" placeholder="Email của bạn."></input>
+                            </div>
+                            <div class="auth-form__form-group">
+                                <input class="auth-form__form-input" placeholder="Mật khẩu của bạn."></input>
+                            </div>
+                            <div class="auth-form__form-group">
+                                <input class="auth-form__form-input" placeholder="Nhập lại mật khẩu."></input>
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <span class="auth-form__policy">
+                                Bằng việc đăng ký bạn đồng ý với shopee về
+                                <a href="">điều khoản dịch vụ</a> và
+                                <a href="">chính sách bảo mật</a> của chúng tôi.
+                            </span>
+                        </div>
+                        <div class="auth-form-controls">
+                            <button class="btn">Trở Lại</button>
+                            <button class="btn btn--primary">Đăng Ký</button>
+                        </div>
+                   </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn-social btn--facebook">
+                            <i class="fab fa-facebook-square"></i>
+                            <span>Kết Nối Với Facebook</span> 
+                        </a>
+                        <a href="" class="btn btn-social btn--google">
+                            <i class="fab fa-google"></i>
+                            <span>Kết Nối Với Google</span> 
+                        </a>
+                    </div>
+                </div>
+                <!-- auth-form: end -->
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

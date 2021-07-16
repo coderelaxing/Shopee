@@ -9,13 +9,14 @@
     }
 }
 
-
-
 .navbar__list {
     padding-left: 0px;
+
     .navbar__list-item{
         display: inline-block;
         padding: 0 8px;
+        position: relative;
+        font-weight: 400;
     }
 }
 
@@ -51,10 +52,6 @@
 
 // ========qr code==========
 
-.navbar__list-item {
-    position: relative;
-}
-
 .navbar__list-item:hover .qr-code {
     display: block;
 }
@@ -66,6 +63,7 @@
     width: 182px;
     border-radius: 2px;
     border: 1px solid;
+    box-shadow: 0 0 3px #9e9e9ead;
     background-color: $white-color;
     display: none;
     animation: fadeIn 0.3s ease-in-out;
@@ -82,6 +80,7 @@
 
 .qr-code__img {
     width: 100%;
+    cursor: default;
 }
 
 .qr-code__link-apps {
@@ -99,6 +98,18 @@
 
 .qr-code__link-app-item:last-child {
     margin-right: 13px;
+}
+
+// ======== popover message =========
+
+.navbar__list-item:hover .popover__message{
+    display: block;
+}
+
+.popover__message {
+    top: 150%;
+    right: 12px;
+    display: none;
 }
 
 

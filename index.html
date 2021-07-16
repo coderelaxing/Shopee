@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee</title>
     
-    <!-- link css custom -->
-    <link rel="stylesheet" href="./Assets/Css/normalize.min.css">
-    <link rel="stylesheet" href="./Assets/Css/index.css">
+    <!-- link icon -->
+    <link rel="stylesheet" href="./Assets/Font/fontawesome-free-5.15.3-web/css/all.css">
 
     <!-- link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
+    <!-- link css custom -->
+    <link rel="stylesheet" href="./Assets/Css/normalize.min.css">
+    <link rel="stylesheet" href="./Assets/Css/index.css">
+
 </head>
 <body>
     <div class="app">  
         <!-- ================ Header  start================ -->
         <header class="header">
-            <nav class="navbar">
-                <!-- list nav left -->
-                <ul class="navbar__list">
-                    <li class="navbar__list-item">Kênh Người Bán</li>
-                    <li class="navbar__list-item">Trở thành Người bán Shopee</li>
-                    <li class="navbar__list-item">Tải ứng dụng</li>
-                    <li class="navbar__list-item">
-                        <span>Kết nối</span>  
-                    </li>
-                </ul>
-
-                <!-- list nav right -->
-                <ul class="navbar__list">
-                    <li class="navbar__list-item">
-                        <a href="" class="navbar__list-item-link">Thông Báo</a>        
-                    </li>
-                    <li class="navbar__list-item">
-                        <a href="" class="navbar__list-item-link">Hỗ Trợ</a> 
-                    </li>
-                    <li class="navbar__list-item">Đăng Ký</li>
-                    <li class="navbar__list-item">Đăng Nhập</li>
-                </ul>
-            </nav>
+            <div class="grid">
+                <nav class="navbar">
+                    <!-- list nav left -->
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item item--separate">Kênh Người Bán</li>
+                        <li class="navbar__list-item item--separate">Trở thành Người bán Shopee</li>
+                        <li class="navbar__list-item item--separate">
+                            <span>Tải ứng dụng</span> 
+                            <div class="qr-code">
+                                <img src="./Assets/Images/qr-app.png" alt="QR code" class="qr-code__img">
+                                <div class="qr-code__link-apps">
+                                    <a href="" class="qr-code__link-app-item">
+                                        <img src="./Assets/Images/google-play.png" alt="google play">
+                                    </a>
+                                    <a href="" class="qr-code__link-app-item">
+                                        <img src="./Assets/Images/app-store.png" alt="app store">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__list-item ">
+                            <span class="cusor--text">Kết nối</span>  
+                            <a href="" class="navbar__list-icon-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="navbar__list-icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <!-- list nav right -->
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="" class="navbar__list-item-link">
+                                <i class="far fa-bell"></i>
+                                <span>Thông Báo</span>
+                            </a>   
+                            <div class="popover">
+                                <div class="popover__header">
+                                    
+                                </div>
+                            </div>     
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="" class="navbar__list-item-link">
+                                <i class="far fa-question-circle"></i>
+                                <span>Hỗ Trợ</span> 
+                            </a> 
+                        </li>
+                        <li class="navbar__list-item item--separate">Đăng Ký</li>
+                        <li class="navbar__list-item ">Đăng Nhập</li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- ================ Header  end================ -->
 

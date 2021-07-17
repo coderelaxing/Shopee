@@ -8,7 +8,17 @@ $black-color: #000;
 
 $text-color: #333;
 
+$text-color-gray: rgb(70, 68, 68);
+
 $text-main-color: #ee4d2d;
 
 $boder-color: #dbdbdb;
+
+// @=========== Height ========
+
+$header-h: 120px;
+
+$navbar-h: 34px;
+
+$header-with-search-h: calc($header-h - $navbar-h);
 

@@ -48,12 +48,24 @@ html {
         opacity: 1; 
     }
 }
+
+@keyframes scaleBetween{
+    from{
+        opacity: 0;
+        transform: scale(70%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
 // ======Popover========
 
 .popover {
     position: absolute;
     top: 100%;
     right: 0;
+    z-index: 99999;
     background-color: $white-color;
     border-radius: 2px;
     width: 402px;
@@ -72,12 +84,11 @@ html {
 .popover::before {
     position: absolute;
     content: '';
-    border-bottom: 4px solid;
     top: -2%;
     right: 36px;
     width: 20px;
     height: 20px;
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: white;
     transform: rotate(45deg);
 }
@@ -110,6 +121,15 @@ html {
     opacity: 1;
 }
 
+.popover__footer-link-acc:last-child {
+   
+    border-bottom-right-radius: 2px;
+}
+
+.popover__footer-link-acc:first-child {
+    border-bottom-left-radius: 2px;
+}
+
 .popover__footer-link-acc {
     text-align: center;
     padding: 10px 0px;
@@ -128,6 +148,11 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
+    z-index: 99999;
+}
+
+.modal.modal-open {
     display: flex;
 }
 
@@ -137,14 +162,17 @@ html {
     position: absolute;
     background-color: #00000059;
     z-index: 1;
+    cursor: pointer;
+    animation: fadeIn linear 0.2s;
 }
 
 .modal__body{
     position: relative;
     margin: auto;
     background-color: $white-color;
-    border-radius: 5px;
+    border-radius: 2px;
     z-index: 3;
+    animation: scaleBetween linear 0.1s;
 }
 
 // ============= Button =========

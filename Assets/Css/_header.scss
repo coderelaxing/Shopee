@@ -1,11 +1,12 @@
 .header{
-    height: 120px;
+    height: $header-h;
     background-image: linear-gradient(0,#ff6633, #f53e2d);
-    margin-top: -10px;
-    padding: 8px 0px;
+    margin-top: 0px;
+    padding: 0;
     .navbar {
         display: flex;
         justify-content: space-between;
+        height: $navbar-h;
     }
 }
 
@@ -60,6 +61,7 @@
     position: absolute;
     top: 150%;
     left: 0;
+    z-index: 999;
     width: 182px;
     border-radius: 2px;
     border: 1px solid;
@@ -108,8 +110,10 @@
 
 .popover__message {
     top: 150%;
-    right: 12px;
+    right: 10px;
     display: none;
 }
+
+// ======== header-with-search =========
 
 

@@ -26,12 +26,18 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .grid__col-2 {
     width: 16.6666667%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__col-2-4 {
+    width: 20%;
     padding-left: 5px;
     padding-right: 5px;
 }

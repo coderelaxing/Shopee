@@ -115,5 +115,237 @@
 }
 
 // ======== header-with-search =========
+// ==================search====================
+.header-with-search {
+    width: 100%;
+    height: $header-with-search-h;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+   width: 197px;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__search {
+    height: 40px;
+    flex: 1;
+    background-color: $white-color;
+    display: flex;
+    border-radius: 2px;
+}
+
+.header__search-input {
+    font-size: 1.6rem;
+    padding: 0 16px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+}
+
+.header__search-input:focus {
+    outline: none;
+}
+
+.header__search-input:focus ~ .search__history {
+    display: block;
+}
+
+// ======search history=======
+.header__search-wrap {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.search__history {
+    background-color: $white-color;
+    width: calc(100% - 10px);
+    box-shadow: 0 0 5px rgb(163, 160, 160);
+    border-radius: 2px;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    display: none;
+    z-index: 9999;
+}
+.search__history-title {
+    font-size: 1.6rem;
+    padding: 0px 14px;
+    width: 100%;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+    background-color: #efeaeab5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    color: $text-color-gray;
+    opacity: 0.8;
+}
+
+.search__history-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.search__history-list-item:hover {
+    background-color: #efeaeab5;
+}
+
+.search__history-list-item {
+    padding: 10px 14px;
+    width: 100%;
+    a{
+        text-decoration: none;
+        color: $text-color-gray;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+.keyword__hot-list {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.keyword__hot-list-item {
+    margin-right: 14px;
+    padding: 5px 0px;
+    a{
+        color: $white-color;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-decoration: none;
+    }
+}
+
+
+.header__search-select {
+    position: relative;
+    width: 140px;
+    font-size: 1.4rem;
+    color: $text-color-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__search-select:hover .header__search-option{
+    display: block;
+}
+
+.option-active {
+    border-left: 1px solid #e9e9e9;
+    padding: 0px 10px;
+    font-weight: 400;
+
+    i{
+        position: relative;
+        top: -2px;
+        padding: 0 3px;
+       
+    }
+}
+
+.header__search-option::before{
+    content: "";
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: -13px;
+}
+
+.header__search-option {
+   position: absolute;
+   top: 70%;
+   right: 0;
+   background-color: $white-color;
+   border-radius: 2px;
+   box-shadow: 0 0 2px #8080806b;
+   padding: 0;
+   min-width: 100%;
+   display: none;
+   animation: fadeIn ease-in 0.2s;
+}
+.option-item:hover {
+    background-color: rgba(221, 219, 219, 0.534);
+}
+.option-item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.option-item:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.option-item {
+    font-size: 1.4rem;
+    color: $text-color-gray;
+    font-weight: 400;
+    display: flex;
+    width: 100%;
+    padding: 15px 10px;
+    i{
+        font-size: 0.8rem;
+        position: absolute;
+        right: 14px;
+        color: $text-main-color;
+    }
+}
+
+
+.header__search-btn {
+    font-size: 1.4rem;
+    color: $white-color;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    margin: 2px 3px;
+    border-radius: 2px;
+    width: 62px;
+    cursor: pointer;
+}
+
+.header__cart {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.margin-top-l{
+    margin-top: 20px;
+}
+.header__cart-icon {
+    font-size: 2.5rem;
+    color: $white-color;
+}
+
+.header__cart:hover .popover__cart {
+    display: block;
+}
+.popover__cart {
+    top: 138%;
+    right: 50px;
+    display: none;
+}
+.popover__cart::before{
+    right: 13px;
+}
 
 

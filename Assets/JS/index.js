@@ -115,3 +115,14 @@ function openLoginForm(){
         openRegisteredForm();
     }
 }
+
+const whereSearchLists = document.querySelectorAll(".option-item")
+const whereSearchItem = document.getElementById('option-text')
+
+
+whereSearchLists.forEach((item)=>{
+    item.onclick = (even)=>{
+        whereSearchItem.innerText = item.innerText
+    }
+})
+

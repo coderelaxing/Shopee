@@ -88,12 +88,13 @@
                 </nav>
                  <!-- =======header-with-search========= -->
                 <header class="header-with-search">
-                    <div class="navbar-width-search-mobile">
-                        <label class="navbar-mobile-icon" for="navbar-mobile-icon"><i class="fas fa-list"></i></label>
-                        <label class="search-mobile" for="search-mobile"><i class="fas fa-search"></i></label>
-                    </div>
-                    <input type="checkbox" hidden  id="navbar-mobile-icon">
+                    <label class="navbar-mobile-icon" for="navbar-mobile-icon"><i class="fas fa-list"></i></label>
+                    <input type="checkbox" hidden id="navbar-mobile-icon">
                     <ul class="navbar-mobile">
+                        <li class="navbar-mobile__item search-on-mobile">
+                           <input type="text" placeholder="Nhập để tìm kiếm." class="search-mobile__input">
+                           <button class="search-mobile__icon"><i class="fas fa-search"></i></button>
+                        </li>
                         <li class="navbar-mobile__item">
                             <a href="" class="navbar-mobile__item-link ">Kênh Người Bán</a>
                         </li>
@@ -191,9 +192,41 @@
                         <a href="" class="filter-item-link">Giá <i class="fas fa-sort-down"></i></a>
                     </li>
                 </ul>
+                <ul class="category-on-tablet-mobile">
+                    <li class="category-item">
+                        <a href="" class="category-link">Sản phẩm hot</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Loa bluetooth</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Tai nghe ariport</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Quần tây nam</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Sản phẩm hot</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Loa bluetooth</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Tai nghe ariport</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Quần tây nam</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Quần nữ</a>
+                    </li>
+                    <li class="category-item">
+                        <a href="" class="category-link">Đồ trẻ em</a>
+                    </li>
+                </ul>
             </div>
             <div class="grid wide">
-                <div class="row sm-gutter">
+                <div class="row sm-gutter app-content">
                     <!-- category -->
                     <div class="col l-2 hide-on-tablet-mobile">
                         <div class="category">
@@ -722,7 +755,7 @@
         <!-- ================ Footer  start================ -->
         <footer class="footer">
             <div class="grid wide">
-                <div class="row sm-gutter border-top-gray">
+                <div class="row sm-gutter border-top-gray footer__main">
                      <!-- footer-item -->
                     <div class="col l-2-4 c-6  m-4">
                         <div class="footer__wrap">
@@ -813,7 +846,7 @@
                         </div>
                     </div>
                     <!-- footer-item -->
-                    <div class="col l-2-4 c-6  m-4">
+                    <div class="col l-2-4 c-12  m-4">
                         <div class="footer__wrap">
                             <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
                             
@@ -840,7 +873,7 @@
                     </div>
                 </div>
             </div>
-            <div class="c-12 footer__end-page">
+            <div class="c-12 footer__end-page  hide-on-mobile">
                 <ul class="footer__policy">
                     <li class="footer__policy-item">
                         <a href="">CHÍNH SÁCH BẢO MẬT</a>

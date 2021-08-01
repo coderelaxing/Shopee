@@ -272,6 +272,7 @@
    position: absolute;
    top: 70%;
    right: 0;
+   z-index: 1;
    background-color: $white-color;
    border-radius: 2px;
    box-shadow: 0 0 2px #8080806b;
@@ -279,6 +280,7 @@
    min-width: 100%;
    display: none;
    animation: fadeIn ease-in 0.2s;
+
 }
 .option-item:hover {
     background-color: rgba(221, 219, 219, 0.534);

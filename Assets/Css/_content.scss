@@ -111,15 +111,11 @@
 }
 
 
-.navbar-width-search-mobile {
-    display: none;
-}
-
-.navbar-mobile-icon,
-.search-mobile {
+.navbar-mobile-icon {
     font-size: 2.8rem;
     color: #fff;
     padding: 0 14px;
+    display: none;
 }
 
 @keyframes onToLeft {
@@ -140,8 +136,8 @@
 //menu on mobile
 .navbar-mobile {
     position: fixed;
-    top: 9%;
-    width: 60%;
+    top: 10%;
+    width: 100%;
     left: 0;
     z-index: 10;
     margin: 0;
@@ -475,6 +471,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
     .page__item {
         list-style: none;
         margin: 0px 10px;
